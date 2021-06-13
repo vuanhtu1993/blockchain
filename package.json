@@ -1,13 +1,16 @@
 {
-  "name": "VueDoro",
+  "name": "blockchain",
   "version": "0.1.0",
+  "homepage": "https://github.com/vuanhtu1993/blockchain",
+  "author": "anhtus",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "lint:fix": "vue-cli-service lint --fix"
+    "lint:fix": "vue-cli-service lint --fix",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -33,6 +36,7 @@
     "eslint-plugin-vue": "^6.2.2",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "gh-pages": "^3.2.0"
   }
 }
