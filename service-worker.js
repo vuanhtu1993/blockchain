@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vue-blockchain/precache-manifest.6e628b544b14cf3af78fe4fcd6a4fce4.js"
+  "/blockchain/precache-manifest.64feb591687987c8abf6b3ac607eca96.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "blockchain"});
