@@ -1,6 +1,5 @@
 <template>
   <div :class="`${actualStepClass}`">
-    <app-header />
     <main class="page__main">
       <h2 class="main__step-title">{{ actualStep.title }}</h2>
       <vue-doro-timer
@@ -21,9 +20,8 @@
 </template>
 
 <script>
-import AppHeader from '@/components/AppHeader'
-import VueDoroTimer from '@/components/VueDoroTimer'
-import VueDoroActions from '@/components/VueDoroActions'
+import VueDoroTimer from '@/components/Pomodoro/VueDoroTimer'
+import VueDoroActions from '@/components/Pomodoro/VueDoroActions'
 import timer from '@/enums/timer'
 
 const {
@@ -36,7 +34,6 @@ const {
 export default {
   name: 'VueDoro',
   components: {
-    AppHeader,
     VueDoroTimer,
     VueDoroActions,
   },
@@ -121,11 +118,11 @@ export default {
     background linear-gradient(180deg, initial -8%, rgba(initial, 0) 100%), endColor
 
   .page
-    display grid
-    grid-row-gap .9rem
-    grid-template-rows 6rem 1fr
+    display flex
     height 100vh
     padding 0 1.3rem
+    justify-content center
+    align-items center
 
   .page--focus
     @extends .page
@@ -140,11 +137,10 @@ export default {
     pageStatusGradient($tana)
 
   .page__main
-    display grid
-    grid-row-gap 2rem
-    grid-template-rows 4rem 50% 3rem 6rem
-    justify-items center
+    display flex
+    flex-direction column
     align-items center
+    justify-content space-around
     @media screen and (max-width $mobile)
       grid-row-gap 0.5rem
       grid-template-rows 12% 50% 15% 20%

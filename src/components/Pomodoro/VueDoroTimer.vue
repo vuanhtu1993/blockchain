@@ -18,7 +18,7 @@
 
 <script>
 import moment from 'moment'
-import alarm from '@/assets/alarm.mp3'
+import alarm from '@/assets/media/alarm.mp3'
 import RadialProgressBar from 'vue-radial-progress'
 
 export default {

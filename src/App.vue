@@ -1,20 +1,18 @@
 <template>
   <div id="app">
-    <vue-doro />
+    <router-view/>
   </div>
 </template>
 
 <script>
-import VueDoro from '@/components/VueDoro'
-
 export default {
   name: 'App',
-  components: {
-    VueDoro,
-  },
 }
 </script>
 
 <style lang="stylus">
-  @import './styles/global.styl'
+@import './styles/global.styl'
+</style>
+<style lang="scss">
+@import '@/assets/css/index.scss';
 </style>

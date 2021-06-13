@@ -6,7 +6,7 @@
     <div class="header__logo">
       <img
         class="logo__image"
-        src="@/assets/logo.png"
+        src="@/assets/images/logo.png"
         alt="VueDoro logo"
       />
       <h1 class="logo__title">VueDoro</h1>

@@ -49,7 +49,7 @@ export default {
     PlayIcon,
     PauseIcon,
     SkipForwardIcon,
-    ActionAdjustments: () => import('@/components/ActionAdjustments'),
+    ActionAdjustments: () => import('@/components/Pomodoro/ActionAdjustments'),
   },
   data() {
     return {
@@ -79,7 +79,7 @@ export default {
 .actions
   display flex
   justify-content space-evenly
-  width 40%
+  width 60%
   @media screen and (max-width $mobile)
     width 100%
 
