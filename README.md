@@ -27,6 +27,16 @@ Run Linter
 ```
 npm run lint
 ```
-## Technologies
-- [VueJS](https://vuejs.org/)
-- [Stylus](https://www.stylus.com/)
+
+## Deploy to the github page
+1. Create vue.config.js if not existed
+2. Add following code to the config
+```javascript
+publicPath: process.env.NODE_ENV === 'production'
+? '/blockchain'
+: '/'
+```
+4. yarn add -D gh-pages
+5. yarn build
+6. Add "deploy": "gh-pages -d dist" to the script
+3. Add "homepage": "https://github.com/vuanhtu1993/blockchain" to the package.json
