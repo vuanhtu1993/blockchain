@@ -14,5 +14,5 @@ export default {
 @import './styles/global.styl'
 </style>
 <style lang="scss">
-@import '@/assets/css/index.scss';
+@import '@/assets/scss/index.scss';
 </style>

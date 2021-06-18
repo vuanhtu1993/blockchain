@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/vue'
-import AppHeader from '@/components/AppHeader'
+import AppHeader from '@/components.scss/AppHeader'
 import render from '../render'
 
 describe('AppHeader', () => {

@@ -1,5 +1,5 @@
 import { screen } from '@testing-library/vue'
-import VueDoro from '@/components/VueDoro'
+import VueDoro from '@/components.scss/VueDoro'
 import timer from '@/enums/timer'
 import render from '../render'
 
