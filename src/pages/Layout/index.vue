@@ -36,13 +36,13 @@ export default {
   background: #1565C0;
 }
 
-@media all and (max-width: 800px) {
+@include table {
   .navigation {
     justify-content: space-around;
   }
 }
 
-@media all and (max-width: 600px) {
+@include mobile {
   .navigation {
     flex-flow: column wrap;
     padding: 0;
